@@ -1,0 +1,393 @@
+	.header-fixed {
+	background-color: #AB0203;
+	box-shadow:0 1px 1px #ccc;
+	padding: 5px 10px;
+	height: 40px;
+	color: #ffffff;
+	box-sizing: border-box;
+	top:-100px;
+
+	-webkit-transition:top 0.3s;
+	transition:top 0.3s;
+}
+
+.header-fixed .header-limiter {
+	text-align: center;
+	margin: 0 auto;
+}
+
+/*	The header placeholder. It is displayed when the header is fixed to the top of the
+	browser window, in order to prevent the content of the page from jumping up. */
+
+.header-fixed-placeholder{
+	height: 80px;
+	display: none;
+}
+
+/* Logo */
+
+.header-fixed .header-limiter h1 {
+	float: left;
+	font-family: 'Arimo', sans-serif;
+	line-height: 40px;
+	margin: 0;
+}
+
+.header-fixed .header-limiter h1 span {
+	color: #AB0203;
+}
+
+/* The navigation links */
+
+.header-fixed .header-limiter a {
+	color: #ffffff;
+	text-decoration: none;
+}
+
+.header-fixed .header-limiter nav {
+	font-family: 'Arimo', sans-serif;
+	line-height: 40px;
+	float: right;
+}
+
+.header-fixed .header-limiter nav a{
+	display: inline-block;
+	padding: 0 5px;
+	text-decoration:none;
+	color: black;
+	opacity: 0.9;
+}
+
+.header-fixed .header-limiter nav a:hover{
+	opacity: 1;
+}
+
+.header-fixed .header-limiter nav a.selected {
+	color: #608bd2;
+	pointer-events: none;
+	opacity: 1;
+}
+
+/* Fixed version of the header */
+
+body.fixed .header-fixed {
+	padding: 10px 40px;
+	height: 50px;
+	position: fixed;
+	width: 100%;
+	top: 0;
+	left: 0;
+}
+
+body.fixed .header-fixed-placeholder {
+	display: block;
+}
+
+body.fixed .header-fixed .header-limiter h1 {
+	font-size: 24px;
+	line-height: 30px;
+}
+
+body.fixed .header-fixed .header-limiter nav {
+	line-height: 28px;
+	font-size: 13px;
+}
+
+
+
+/*
+	 We are clearing the body's margin and padding, so that the header fits properly.
+	 We are also adding a height to demonstrate the scrolling behavior. You can remove
+	 these styles.
+ */
+
+.navbar a{
+    color:#fff;
+}
+
+h2{
+    color: #009 !important;
+    padding: 0 0 3px 0;
+    border-bottom: 2px;
+    margin: 0 0 15px 0;
+    font-family: 100 14px/22px Arimo !important;
+}
+
+h4{
+    color: #009 !important;
+    padding: 0 0 1px 0;
+    border-bottom: 2px;
+    margin: 0 0 5px 0;
+    font-family: 100 12px/14px Arimo !important;
+}
+
+
+
+
+.social-link{
+    margin: 0px;
+    padding:0px;
+    list-style: none;
+}
+
+.social-link li{
+    float:left !important;
+    margin-left: 40px;
+}
+
+.main-menu {
+    padding: 0;
+    margin: 15px 0 0 0px;
+    list-style: none;
+}
+
+.nav-tabs{
+    border: none !important;
+}
+
+.main-menu li{
+    display: inline-block;
+}
+
+.nav-tabs li > a{
+    font-size: 20px;
+    line-height: 35px;
+    padding: 0;
+    margin: 0 20px;
+    display: inline-block;
+    text-decoration: none;
+    color: #000;
+    border-bottom: 2px solid #ccc !important;
+}
+
+.nav-tabs li > a.active{
+    border: none !important;
+    border-bottom: 3px solid #069 !important;
+}
+
+.response p{
+    font: 90 14px/22px Arimo !important;
+}
+
+.right-side-container{
+
+    border:solid 1px rgb(170, 172, 173);padding:0px !important;
+    border-top-right-radius: 10px; margin-top: 30px;
+    margin-left:30px !important;
+    height:auto;
+}
+.right-side-container-content-1{
+		background: #AB0203; border-top-right-radius: 10px; height: auto;
+		color: #ffffff;
+}
+.right-side-container-content-1-text p {	
+	font-size:15px;
+}
+
+.footer-distributed{
+	background-color:   none;
+	box-shadow: 0 0px 0px 0 rgba(0, 0, 0, 0.15);
+	box-sizing: border-box;
+	width: 100%;
+	text-align: left;
+
+	padding:  0px 0px;
+	margin-top: 0px;
+}
+
+.footer-distributed .footer-left,
+.footer-distributed .footer-center,
+.footer-distributed .footer-right{
+	display: inline-block;
+	vertical-align: top;
+}
+
+/* Footer left */
+
+.footer-distributed .footer-left{
+	width: 40%;
+}
+
+/* The company logo */
+
+.footer-distributed h3{
+	color:  black;
+	margin: 0;
+}
+
+.footer-distributed h3 span{
+	color:  #5383d3;
+}
+
+/* Footer links */
+
+.footer-distributed .footer-links{
+	color:  #ffffff;
+	margin: 20px 0 12px;
+	padding: 0;
+}
+
+.footer-distributed .footer-links a{
+	display:inline-block;
+	line-height: 1.8;
+	text-decoration: none;
+	color:  inherit;
+}
+
+.footer-distributed .footer-company-name{
+	color:  #848789;
+	font-weight: normal;
+	margin: 0;
+}
+
+/* Footer Center */
+
+.footer-distributed .footer-center{
+	width: 35%;
+}
+
+.footer-distributed .footer-center i{
+	background-color:  #848789;
+	color: #ffffff;
+	width: 38px;
+	height: 38px;
+	border-radius: 50%;
+	text-align: center;
+	line-height: 30px;
+	margin: 10px 15px;
+	vertical-align: middle;
+}
+
+.footer-distributed .footer-center i.fa-envelope{
+	font-size: 17px;
+	line-height: 30px;
+}
+
+.footer-distributed .footer-center p{
+	display: inline-block;
+	color: #ffffff;
+	vertical-align: middle;
+	margin:0;
+}
+
+.footer-distributed .footer-center p span{
+	display:block;
+	font-weight: normal;
+	font-size:14px;
+	line-height:2;
+}
+
+.footer-distributed .footer-center p a{
+	color:  #5383d3;
+	text-decoration: none;;
+}
+
+
+/* Footer Right */
+
+.footer-distributed .footer-right{
+	width: 20%;
+}
+
+.footer-distributed .footer-company-about{
+	line-height: 20px;
+	color:  #92999f;
+	font-size: 13px;
+	font-weight: normal;
+	margin: 0;
+}
+
+.footer-distributed .footer-social-follow span{
+	display: block;
+	color:  #ffffff;
+	font-size: 14px;
+	font-weight: bold;
+	margin-bottom: 20px;
+}
+
+.footer-distributed .footer-icons{
+	margin-top: 25px;
+}
+
+.footer-distributed .footer-icons a{
+	display: inline-block;
+	width: 35px;
+	height: 35px;
+	cursor: pointer;
+	background-color:  #848789;
+	border-radius: 2px;
+
+	font-size: 20px;
+	color: #ffffff;
+	text-align: center;
+	line-height: 35px;
+
+	margin-right: 3px;
+	margin-bottom: 5px;
+}
+
+/* If you don't want the footer to be responsive, remove these media queries */
+
+@media (max-width: 880px) {
+
+.header-fixed {
+		padding: 20px 0;
+		height: 75px;
+	}
+
+	.header-fixed .header-limiter h1 {
+		float: none;
+		margin: -8px 0 10px;
+		text-align: center;
+		font-size: 24px;
+		line-height: 1;
+	}
+
+	.header-fixed .header-limiter nav {
+		line-height: 1;
+		float:none;
+	}
+
+	.header-fixed .header-limiter nav a {
+		font-size: 13px;
+	}
+
+	body.fixed .header-fixed {
+		display: none;
+	}
+	.footer-distributed{
+		font: bold 14px Arimo;
+	}
+
+	.footer-distributed .footer-left,
+	.footer-distributed .footer-center,
+	.footer-distributed .footer-right{
+		display: block;
+		width: 100%;
+		margin-bottom: 40px;
+		text-align: center;
+	}
+
+	.footer-distributed .footer-center i{
+		margin-left: 0;
+	}
+}
+
+.header-fixed .header-limiter nav a {
+		font-size: 18px;
+	}
+
+body {
+	margin: 0;
+	padding: 0;
+	font-family: Arimo;
+    font-size: 16px;
+}
+
+figcaption {
+    display: block;
+}
+
+#resp-image {
+width: 40%;
+height: 40%; }
